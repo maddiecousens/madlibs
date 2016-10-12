@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlib</title>
+    <link rel="stylesheet" href="/home/user/src/madlibs/static/madlibs.css">
+</head>
+<body>
+
+<h1>Madlib Game!</h1>
+
+<p> Hi {{ the_person }} you have entered the Alibaba. Ever thing here is a {{ color }} {{ noun }}.
+
+    {% if adjective %}
+    You are so {{ adjective }}.
+    {% endif %} 
+
+    {% if animals %}
+        These animals are around you: 
+        {% for animal in animals[:-1] %}
+            <span> {{ animal }}, </span>
+        {% endfor %}
+        <span> {{ animals[-1] }}. </span>
+    {% endif %}
+    <br>
+
+</p>
+    
+</body>
+</html>
