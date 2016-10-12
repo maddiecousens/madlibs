@@ -1,32 +1,30 @@
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href="/static/madlibs.css">
+{% extends 'base.html' %}
+{% block title %} Game {% endblock %}
 
-  <title>Hi There!</title>
-</head>
-<body>
+{% block content %}
 
-<h1>Hi There!</h1>
+<h2>Hi There!</h2>
 
 <form action="/madlib">
-  <div id="person"> Person: <input type="text" name="person" required> </div>
+  <div class="game"> Person: <input type="text" name="person"> </div>
+  <div class="game">
   <select name="color" required> 
     <option value="blue">Blue</option>
     <option value="yellow">Yellow</option>
     <option value="black">Black</option>
     <option value="green">Green</option>
     <option value="orange">Orange</option>
-  </select> <br>
-  Noun: <input type="text" name="noun" required> <br>
-  Adjective: <input type="text" name="adjective"> <br>
+  </select> </div>
+  <div class="game">Noun: <input type="text" name="noun" required> </div>
+  <div class="game">Adjective: <input type="text" name="adjective"></div>
+  <p>Choose your animals:</p>
+  <div id="animals">
     <input type="checkbox" name="animals" value="dog">Dog
     <input type="checkbox" name="animals" value="cat">Cat
     <input type="checkbox" name="animals" value="tiger">Tiger
-    <input type="checkbox" name="animals" value="bear">Bear <br><br>
+    <input type="checkbox" name="animals" value="bear">Bear </div>
 
   <input type="submit">
 </form>
 
-</body>
-</html>
+{% endblock %}

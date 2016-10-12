@@ -1,9 +1,69 @@
-#person {
+.game {
 
-    color: blue;
+    color: pink;
 }
 
-h1 {
+#animals {
+    color: orange;
+    background-color: black;
+    /*border: 1px solid black;*/
+    margin: auto;
+    width: 25%;
+}
+/*h1 {
     background-color: blue;
 
+}*/
+
+#everywhere {
+    color: #111; 
+    font-family: 'Helvetica Neue'; 
+    font-size: 50px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
 }
+
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+form { color: #111; 
+        font-family: 'Helvetica Neue', sans-serif; 
+        font-size: 20px; 
+        line-height: 24px; 
+        margin: 0 0 24px; 
+        text-align: center; 
+    }
+
+p { color: #111; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 20px;
+     font-weight: 300;
+      line-height: 32px;
+     text-align: center; }
+
+body {
+    background-image: url("http://wallpapercave.com/wp/MwCUF2c.jpg");
+    background-color: #cccccc;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type="text"] {
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+}
+
+/*Color 1: #ff0084
+
+Color 2: #33001b*/

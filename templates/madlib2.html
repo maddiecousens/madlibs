@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Madlib1 {% endblock %}
+
+{% block content %}
+
+
+<h2>Here is your Madlib Game!</h2>
+
+
+<h2> {% if the_person%}
+    Why hello, {{ the_person }}!!
+    {% endif %} </h2>
+
+<p> {% if animals %}
+    What would you do if a 
+    {% for animal in animals[:-1] %}
+    {{ animal }},
+    {% endfor %}
+    and {{ animals[-1] }}
+    came running at you?!?!?!?!
+    {% endif %}</p>
+
+<p> What about if you saw a {{ color }} {{ noun }} walking down the street?</p>
+
+    
+{% block content %}

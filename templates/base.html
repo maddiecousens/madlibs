@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %} TITLE GOES HERE {% endblock %}</title>
+    <link rel="stylesheet" href="/static/madlibs.css">
+</head>
+
+<body>
+    <h1 id="everywhere" class="test"> THIS SHOWS EVERYWHERE :) </h1>
+    {% block content%} THIS IS BODY CONTENT IT SHOULD BE INSIDE THE SPECIFIED
+                in the html files that are importing base.html {% endblock %}
+</body>
+</html>

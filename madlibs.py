@@ -51,13 +51,17 @@ def show_madlib_form():
 def show_madlib():
     """ Story of the person"""
     # person = request.args['person]
-    person = request.args.get("person", "Maddie")
+    html = choice([0,1])
+    person = request.args.get("person")
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
     animals = request.args.getlist("animals")
 
-    return render_template("madlib.html", the_person=person, color=color, noun=noun, adjective=adjective, animals=animals)
+    if not(html):
+        return render_template("madlib.html", the_person=person, color=color, noun=noun, adjective=adjective, animals=animals)
+    if html == 1:
+        return render_template("madlib2.html", the_person=person, color=color, noun=noun, adjective=adjective, animals=animals)
 
 
 

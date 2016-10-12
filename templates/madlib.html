@@ -1,13 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<link rel="stylesheet" href="/static/madlibs.css">
-  <title>Madlib</title>
-    
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %} Madlib0 {% endblock %}
 
-<h1>Madlib Game!</h1>
+{% block content %}
+
+<h2>Here is your Madlib Game!</h2>
 
 <p> Hi {{ the_person }} you have entered the Alibaba. Ever thing here is a {{ color }} {{ noun }}.
 
@@ -26,5 +22,4 @@
 
 </p>
     
-</body>
-</html>
+{% endblock %}
